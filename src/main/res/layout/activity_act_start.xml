@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina"
+    android:orientation="vertical"
+    tools:context=".ActStart">
+
+
+    <Button
+        android:id="@+id/pomoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pomoc"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/filteriDugme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:textColor="#212163"
+        android:id="@+id/pomocText"
+        android:visibility="gone"
+        android:textSize="17sp"
+        android:text="Dobro dosli u aplikaciju Domacica. \n Za prelazak na druge prozore potrebno je kliknuti ikonicu 2 puta(podesavanja) \n
+Za pretragu recepata mozete koristiti opciju filter \n Za gasenje prozora pomoc pritisnite dugme pomoc "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/domacica"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/domacica"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#212163"
+        android:src="@drawable/croc_1674576840163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/filteriDugme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="filtriraj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pomocText" />
+
+
+    <EditText
+        android:id="@+id/pretragaPoImenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="pretraga po imenu jela "
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#A59E9E"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filteriDugme" />
+
+    <Button
+        android:id="@+id/pretragaPoImenuBtn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pretraga po Imenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pretragaPoImenu" />
+
+
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="sastojak"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#A59E9E"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pretragaPoImenuBtn" />
+
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="sastojak"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#A59E9E"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText1" />
+
+    <EditText
+        android:id="@+id/EditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="sastojak"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#A59E9E"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText2" />
+
+
+    <Button
+        android:id="@+id/filteriOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sacuvaj promenu"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText3" />
+
+
+    <ScrollView
+
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filteriOK">
+
+        <RelativeLayout
+
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notesRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/fragment_objava" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ScrollView
+
+        android:id="@+id/scrollview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filteriOK">
+
+        <RelativeLayout
+
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="#212163">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notesRV2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:listitem="@layout/fragment_objava" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:itemIconTint="@color/bnv_tab_item_foreground"
+
+        app:itemTextColor="@color/bnv_tab_item_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/my_menu"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

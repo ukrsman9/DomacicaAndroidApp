@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/login2">
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.a005.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login2_to_signUp3"
+            app:destination="@id/signUp3" />
+    </fragment>
+    <activity
+        android:id="@+id/signUp3"
+        android:name="com.example.a005.signUp3"
+        android:label="activity_sign_up3"
+        tools:layout="@layout/activity_sign_up3" />
+    <action
+        android:id="@+id/action_global_signUp3"
+        app:destination="@id/signUp3" />
+    <activity
+        android:id="@+id/actStart"
+        android:name="com.example.a005.ActStart"
+        android:label="activity_act_start"
+        tools:layout="@layout/activity_act_start" />
+    <activity
+        android:id="@+id/actProfil"
+        android:name="com.example.a005.ActProfil"
+        android:label="activity_act_profil"
+        tools:layout="@layout/activity_act_profil" />
+    <activity
+        android:id="@+id/actNewPost"
+        android:name="com.example.a005.ActNewPost"
+        android:label="activity_act_new_post"
+        tools:layout="@layout/activity_act_new_post" />
+</navigation>

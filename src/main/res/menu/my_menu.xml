@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="osvezi"
+        android:enabled="true"/>
+
+
+    <item android:id="@+id/newPost"
+        android:icon="@drawable/ic_baseline_create_new_folder_24"
+        android:title="nova objava"
+        android:enabled="true"/>
+
+    <item android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_applications_24"
+        android:title="podesavanja"
+        android:enabled="true"/>
+
+
+
+
+</menu>
